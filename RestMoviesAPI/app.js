@@ -74,5 +74,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use('/api', userRoutes);
 
 
+const movieRoutes = require('./routes/movieRoutes');
+app.use('/api', movieRoutes);
 
 module.exports = app;

@@ -5,7 +5,7 @@ const userSchema = new Schema ({
 
   username  : String,
   password  : String,
-  favMovies : {type : [Schema.Types.ObjectId], ref : 'Movie'}
+  favMovies : {type : [Schema.Types.ObjectId], default : [] ,ref : 'Movie'}
 })
 
 const User = mongoose.model('User' , userSchema);
